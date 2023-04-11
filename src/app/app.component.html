@@ -1,0 +1,39 @@
+<h1>Ejercicio 1</h1>
+<h2>Suma y promedio de edad</h2>
+
+<div>
+  <label for="">Edad 1: </label>
+  <input type="number" min="0" max="100" [(ngModel)]="edadUno"/>
+</div>
+  <br>
+<div>
+  <label for="">Edad 2: </label>
+  <input type="number" min="0" max="100" [(ngModel)]="edadDos"/>
+</div>
+  <br>
+<div>
+  <button (click)="calcular()">Calcular</button>
+</div>
+  <br>
+<div>
+  <label for="">Promedio: {{promedioEdad}}</label>
+</div>
+  <br>
+<div>
+  <label for="">Suma: {{sumaEdad}}</label>
+</div>
+  <br>
+<div>
+  <button (click)="limpiar()">Limpiar</button>
+</div>
+
+<h1>Ejercicio 2</h1>
+<h2>Login Usuario</h2>
+<p>Bienvenido - Login - Errror</p>
+<ul>
+  <li><a href="/bienvenido">Bienvenido</a></li>
+  <li><a href="/login">Login</a></li>
+  <li><a href="/error">Error</a></li>
+  <li><a href="">Home</a></li>
+</ul>
+<router-outlet></router-outlet>
